@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(62, 62, 62);
+    color: rgb(243, 243, 243);
+}
+
+main {
+    width: 90%;
+    margin: 10px auto;
+    background-color: rgb(243, 243, 243);
+    color: black;
+}
+
+#accordion {
+    width: 60%;
+    max-width: 40rem;
+    min-width: 20rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+#accordion h4 {
+    text-transform: uppercase;
+    border: 1px solid rgb(62, 62, 62);
+    border-bottom: none;
+    margin: 0px;
+    padding: 0.75rem;
+    background-color: rgb(222, 222, 222);;
+}
+
+#last h4 {
+    border-bottom: 1px solid rgb(62, 62, 62);
+}
+
+#accordion h4:hover {
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+#accordion h4:active {
+    background-color: rgb(245, 245, 245);
+}
+
+#accordion p {
+    border-left: 1px solid rgb(62, 62, 62);
+    border-right: 1px solid rgb(62, 62, 62);
+    margin: 0;
+    padding: 0.75rem;
+    background-color: rgb(235, 235, 235);;
+}
+
+#last p {
+    border-bottom: 1px solid rgb(62, 62, 62);
+}
+
+footer {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(62, 62, 62);
+    color: rgb(243, 243, 243);
+}

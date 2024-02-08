@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+
+</head>
+<body>
+    <header>
+        <h1>JQuery Accordion</h1>
+    </header>
+    <main>
+        <section id="accordion">
+            <div>              
+                <h4>First Title</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
+            </div>
+            <div>
+                <h4>Second Title</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
+            </div>
+            <div>
+                <h4>Third Title</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
+            </div>
+            <div id="last">
+                <h4>Fourth Title</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
+            </div>
+        </section>
+    </main>
+    <footer>Copyright © 2024 Laura Servettini</footer>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $('#accordion p:not(:first)').hide();
+
+        $('#accordion h4').click(function(){
+            $(this).next().slideToggle(2000)
+                .parent()
+                .siblings()
+                .children('div p:visible')
+                .slideUp(2000);
+        })
+    })
+</script>
