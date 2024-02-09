@@ -12,7 +12,7 @@ nav a {
     font-weight: bold;
     font-size: 1rem;
     color: rgb(243, 243, 243);
-    background-color: rgb(107, 107, 107);
+    background-color: rgb(127, 127, 127);
     border-radius: 4px;
     margin: 0.25rem;
     padding: 0.5rem 0.75rem;
@@ -30,7 +30,7 @@ nav a:hover{
 #mobile {
     display: none;
     color: rgb(243, 243, 243);
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(97, 97, 97);
     padding: 2rem;
 }
 
@@ -40,6 +40,11 @@ nav a:hover{
         display: flex;
         justify-content: space-between;
         align-content: center;
+        
+    }
+
+    header h1 {
+        padding-left: 1rem;
         
     }
 

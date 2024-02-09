@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css" />
     <link rel="stylesheet" href="/style/navbar.css" />
+    <link rel="stylesheet" href="/style/slide-panel.css" />
     <script src="./script/mobile-navbar.js" defer></script>
+    <script src="./script/slide-panel.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,7 +21,7 @@
             <ul>
                 <li><a href="/">Accordion</a></li>
                 <li><a href="/slide-panel.html">Slide Panel</a></li>
-                <li><a href="/">Accordion</a></li>
+                <li><a href="/news-ticker">News Ticker</a></li>
                 <li><a href="/">Accordion</a></li>
             </ul>
         </nav>
@@ -36,45 +38,22 @@
             <ul>
                 <li><a href="/">Accordion</a></li>
                 <li><a href="/slide-panel.html">Slide Panel</a></li>
-                <li><a href="/">Accordion</a></li>
+                <li><a href="/news-ticker">News Ticker</a></li>
                 <li><a href="/">Accordion</a></li>
             </ul>
         </nav>
     </aside>
     <main>
-        <section id="accordion">
-            <div>              
-                <h4>First Title</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
+        <section>
+            <div id="slide-panel">   
+                <div id="slide">
+                    <h3>Slide Title</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
+                </div>           
             </div>
-            <div>
-                <h4>Second Title</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
-            </div>
-            <div>
-                <h4>Third Title</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
-            </div>
-            <div id="last">
-                <h4>Fourth Title</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
-            </div>
+            <a id="btn-slide-panel">Slide Panel<i id="icon">▼</i></a> 
         </section>
     </main>
     <footer>Copyright © 2024 Laura Servettini</footer>
 </body>
 </html>
-
-<!-- <script>
-    $(document).ready(function(){
-        $('#accordion p:not(:first)').hide();
-
-        $('#accordion h4').click(function(){
-            $(this).next().slideToggle(2000)
-                .parent()
-                .siblings()
-                .children('div p:visible')
-                .slideUp(2000);
-        })
-    })
-</script> -->
