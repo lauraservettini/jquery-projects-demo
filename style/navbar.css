@@ -34,7 +34,6 @@ nav a:hover{
     padding: 2rem;
 }
 
-
 @media (max-width: 40rem) {
 
     header {
@@ -68,6 +67,11 @@ nav a:hover{
         background-color: rgb(243, 243, 243);
     }
 
+    nav ul li{
+        display: list-item;
+        margin: 1rem;
+    }
+
     nav a {
         font-weight: bold;
         font-size: 0.75rem;
@@ -80,11 +84,5 @@ nav a:hover{
         width: 20rem;
     
     }
-}
-
-@media (max-width: 30rem) {
-    nav ul li{
-        display: list-item;
-        margin: 1rem;
-    }
+    
 }
