@@ -8,5 +8,4 @@ There are different pages with different features:
 - demo news ticker
 - demo gallery
 
-#LICENSE
-[MIT License]('./MIT-LICENSE');
+# MIT LICENSE
