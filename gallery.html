@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQuery News Ticker</title>
+    <title>JQuery Gallery</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css" />
     <link rel="stylesheet" href="/style/navbar.css" />
-    <link rel="stylesheet" href="/style/news-ticker.css" />
+    <link rel="stylesheet" href="/style/gallery.css" />
+    <script src="./script/gallery.js" defer></script>
     <script src="./script/mobile-navbar.js" defer></script>
-    <script src="./script/news-ticker.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>JQuery News Ticker</h1>
+        <h1>JQuery Gallery</h1>
         <nav id="nav">
             <ul>
                 <li><a href="/">Accordion</a></li>
@@ -44,25 +44,17 @@
         </nav>
     </aside>
     <main>
-        <section id="news-ticker">
-            <ul>
-                <li>              
-                    <h4>First News</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
-                </li>
-                <li>
-                    <h4>Second News</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
-                </li>
-                <li>
-                    <h4>Third News</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
-                </li>
-                <li >
-                    <h4>Fourth News</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
-                </li>
-            </ul>
+        <section>
+            <div id="image-container"> 
+                <div class="item-group">
+                    <div class="item"><img src="./images/gallery/sunset-tree.jpg"></div>
+                    <div class="item"><img src="./images/gallery/cascade.jpeg"></div>
+                </div>
+                <div class="item-group">
+                    <div class="item"><img src="./images/gallery/eye.jpeg"></div>
+                    <div class="item"><img src="./images/gallery/lake-mountain.jpeg"></div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>Copyright © 2024 Laura Servettini</footer>

@@ -1,0 +1,60 @@
+header {
+    background-image: radial-gradient(rgb(255, 115, 1),rgb(250, 254, 7)); 
+}
+
+nav a {
+    color: rgb(255, 115, 1);
+    background-color: rgb(255, 237, 222);
+}
+
+nav a:hover{
+    background-color: rgb(254, 246, 241);
+}
+
+section {
+    padding: 1rem;
+}
+
+#image-container {
+    display:flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    margin: 0rem auto;
+    border: 2px solid rgb(49, 45, 118);
+    color: rgb(235, 235, 235);
+}
+
+.item-group {
+    display:flex;
+    width: 100%;
+    height: 50%;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+}
+
+.item img {
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit:inherit;
+    overflow: hidden;
+}
+
+@media (max-width: 35rem){
+    #image-container {
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+@media (max-width: 28rem){
+    #image-container {
+        width: 18rem;
+        height: 18rem;
+    }
+
+}
