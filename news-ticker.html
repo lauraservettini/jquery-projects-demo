@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery Slide Panel</title>
+    <title>JQuery News Ticker</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css" />
     <link rel="stylesheet" href="/style/navbar.css" />
-    <link rel="stylesheet" href="/style/slide-panel.css" />
+    <link rel="stylesheet" href="/style/news-ticker.css" />
     <script src="./script/mobile-navbar.js" defer></script>
-    <script src="./script/slide-panel.js" defer></script>
+    <script src="./script/news-ticker.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Jquery Slide Panel</h1>
+        <h1>Jquery News Ticker</h1>
         <nav id="nav">
             <ul>
                 <li><a href="/">Accordion</a></li>
@@ -44,14 +44,25 @@
         </nav>
     </aside>
     <main>
-        <section>
-            <div id="slide-panel">   
-                <div id="slide">
-                    <h3>Slide Title</h3>
+        <section id="news-ticker">
+            <ul>
+                <li>              
+                    <h4>First News</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
-                </div>           
-            </div>
-            <a id="btn-slide-panel">Slide Panel<i id="icon">▼</i></a> 
+                </li>
+                <li>
+                    <h4>Second News</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
+                </li>
+                <li>
+                    <h4>Third News</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
+                </li>
+                <li >
+                    <h4>Fourth News</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus deserunt facere dolorem in eos nostrum iusto omnis at mollitia delectus, quis tempore explicabo modi similique optio odit dolores incidunt!</p>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>Copyright © 2024 Laura Servettini</footer>
