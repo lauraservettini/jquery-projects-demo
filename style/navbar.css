@@ -1,0 +1,90 @@
+nav ul {
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(243, 243, 243);
+    background-color: rgb(107, 107, 107);
+    border-radius: 4px;
+    margin: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+}
+
+nav a:hover{
+    background-color: rgb(157, 157, 157);
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#mobile {
+    display: none;
+    color: rgb(243, 243, 243);
+    background-color: rgb(87, 87, 87);
+    padding: 2rem;
+}
+
+
+@media (max-width: 40rem) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #btn-mobile {
+        display:block;
+        padding: 0.5rem
+    }
+    
+    #btn-mobile div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        width: 30px;
+        height: 30px;
+        margin: 1rem;       
+    }
+
+    #btn-mobile span{
+        padding: 2.5px;
+        background-color: rgb(243, 243, 243);
+    }
+
+    nav a {
+        font-weight: bold;
+        font-size: 0.75rem;
+        color: rgb(243, 243, 243);
+        background-color: rgb(107, 107, 107);
+        border-radius: 4px;
+        margin: 0.25rem;
+        padding: 0.5rem 0.75rem;
+        cursor: pointer;
+        width: 20rem;
+    
+    }
+}
+
+@media (max-width: 30rem) {
+    nav ul li{
+        display: list-item;
+        margin: 1rem;
+    }
+}
